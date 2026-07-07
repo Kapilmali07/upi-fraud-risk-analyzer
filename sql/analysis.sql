@@ -53,8 +53,7 @@ ORDER BY TOTAL_AMOUNT DESC
 LIMIT 20;
 
 /*
-I used HAVING instead of WHERE here because HAVING filters after aggregation. This identifies repeat fraud accounts — which are high priority for blacklisting.
-In your 50,000 sample, every fraudulent account appears only once — no account committed fraud more than once. This is actually realistic — fraudsters typically use 
+This identifies repeat fraud accounts — which are high priority for blacklisting. In 50,000 sample, every fraudulent account appears only once — no account committed fraud more than once. This is actually realistic — fraudsters typically use 
 each account only once to avoid detection.
 
 When I tried to find repeat fraud accounts, the query returned no results — which is itself a finding. Each fraudulent account in this dataset was used exactly once, 
@@ -62,8 +61,8 @@ suggesting fraudsters deliberately use fresh accounts per transaction to avoid p
 account-level blacklisting.
 
 1) Top 2 fraud accounts stole exactly ₹1 crore (10,000,000) each
-2) Most fraud accounts have FVI of exactly 4.0 — confirming your FVI formula is working correctly
-3) All accounts used exactly once — confirming the earlier finding
+2) Most fraud accounts have FVI of exactly 4.0
+3) All accounts used exactly once
 
 Summary:
 "The top fraudulent accounts each transferred exactly ₹1 crore in a single transaction — suggesting coordinated, 
