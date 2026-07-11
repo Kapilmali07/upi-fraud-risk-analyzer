@@ -51,7 +51,7 @@ beyond static rules. This project aims to:
 
 | Property | Detail |
 |---|---|
-| Source | PaySim Synthetic Financial Dataset (Kaggle) |
+| Source | PaySim Financial Dataset |
 | Total Size | 6.3 million transactions, 11 features |
 | Fraud Rate | 0.13% — 8,213 fraudulent transactions |
 | Fraud Types | TRANSFER and CASH_OUT only |
@@ -285,7 +285,7 @@ pip install pandas numpy matplotlib seaborn sqlalchemy pymysql reportlab
 <h2><a class="anchor" id="author"></a>Author & Contact</h2>
 
 **Kapil Mali**  
-Data Analyst | Kantar Analytics, Pune
+Senior Data Analyst | Kantar Analytics, Pune
 🔗 LinkedIn: [LinkedIn.com/Kapil-Mali](https://www.linkedin.com/in/kapil-mali/)
 🔗 GitHub: [github.com/Kapilmali07](https://github.com/Kapilmali07)  
 🔗 Project: [upi-fraud-risk-analyzer](https://github.com/Kapilmali07/upi-fraud-risk-analyzer)
