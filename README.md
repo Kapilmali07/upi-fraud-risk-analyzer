@@ -81,58 +81,34 @@ beyond static rules. This project aims to:
 
 <h2><a class="anchor" id="project-structure"></a>Project Structure</h2>
 
-
-upi-fraud-risk-analyzer/
-
+```text
+📦 upi-fraud-risk-analyzer
+├── 📄 README.md
+├── 📁 data
+│   ├── PS_20174392719_1491204439457_log.csv
+│   ├── upi_engineered.csv
+│   └── powerbi_data.csv
 │
-├── README.md
-│
-│
-├── data/
-│
-│   ├── PS_20174392719_1491204439457_log.csv   (raw dataset)
-│
-│   ├── upi_engineered.csv                      (FVI features added)
-│
-│   └── powerbi_data.csv                        (Power BI input)
-│
-│
-├── notebooks/
-│
+├── 📁 notebooks
 │   ├── 01_eda_exploration.ipynb
-│
 │   ├── 02_eda_visualization.ipynb
-│
 │   ├── 03_feature_engineering.ipynb
-│
 │   ├── 04_mysql_load.ipynb
-│
 │   └── 05_pdf_summary.ipynb
 │
-│
-├── sql/
-│
+├── 📁 sql
 │   └── analysis.sql
 │
-│
-├── powerbi/
-│
+├── 📁 powerbi
 │   └── upi_fraud_dashboard.pbix
 │
-│
-└── outputs/
-│
-├── fraud_by_type.png
-│
-├── fraud_by_hour.png
-│
-├── amount_distribution.png
-│
-├── dashboard_final.png
-│
-└── upi_fraud_risk_report.pdf
-
----
+└── 📁 outputs
+    ├── fraud_by_type.png
+    ├── fraud_by_hour.png
+    ├── amount_distribution.png
+    ├── dashboard_final.png
+    └── upi_fraud_risk_report.pdf
+```
 
 <h2><a class="anchor" id="data-cleaning--preparation"></a>Data Cleaning & Preparation</h2>
 
